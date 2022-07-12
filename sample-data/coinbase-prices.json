@@ -1,0 +1,149 @@
+{
+  "status": {
+    "timestamp": "2022-05-25T00:25:25.751Z",
+    "error_code": 0,
+    "error_message": null,
+    "elapsed": 1,
+    "credit_count": 1,
+    "notice": null
+  },
+  "data": {
+    "ETH": [
+      {
+        "id": 4469,
+        "name": "bpiur4c2wj7",
+        "symbol": "ETH",
+        "slug": "59wlxgfa7lt",
+        "is_active": 5217,
+        "is_fiat": null,
+        "circulating_supply": 6920,
+        "total_supply": 898,
+        "max_supply": 773,
+        "date_added": "2022-05-25T00:25:25.751Z",
+        "num_market_pairs": 5438,
+        "cmc_rank": 7665,
+        "last_updated": "2022-05-25T00:25:25.751Z",
+        "tags": [
+          "82l81zx0hke",
+          "26jut6qrf2i",
+          "h5075mgfaa8",
+          "m2mkifkp2x8",
+          "mhifs6qynuc",
+          "q03ua3ngvpc",
+          "23vtr6202d5",
+          "22ok3xvdx2i",
+          "q3x51xf20ff",
+          "14l52rwpdas"
+        ],
+        "platform": null,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "quote": {
+          "USD": {
+            "price": 0.24249238508859428,
+            "volume_24h": 0.10011019544500654,
+            "volume_change_24h": 0.8093658576283593,
+            "percent_change_1h": 0.6163553350403843,
+            "percent_change_24h": 0.03082815796299121,
+            "percent_change_7d": 0.7182985757518412,
+            "percent_change_30d": 0.4533809144462375,
+            "market_cap": 0.41057952256496844,
+            "market_cap_dominance": 7020,
+            "fully_diluted_market_cap": 0.11587199896546685,
+            "last_updated": "2022-05-25T00:25:25.751Z"
+          }
+        }
+      },
+      {
+        "id": 6912,
+        "name": "zox79qciucj",
+        "symbol": "ETH",
+        "slug": "d15m1fbxron",
+        "is_active": 739,
+        "is_fiat": null,
+        "circulating_supply": 4066,
+        "total_supply": 8091,
+        "max_supply": 8069,
+        "date_added": "2022-05-25T00:25:25.751Z",
+        "num_market_pairs": 5982,
+        "cmc_rank": 1159,
+        "last_updated": "2022-05-25T00:25:25.751Z",
+        "tags": [
+          "te0z0iaxe2l",
+          "1pmv1m6iu7u",
+          "ci2es1i5w1i",
+          "q17kqdyaybj",
+          "qjiqzghh3u",
+          "ses5e3hx8ei",
+          "j6f1ehf2axe",
+          "3zttxurheth",
+          "h3u02l6i9uh",
+          "n3gm4enp8n"
+        ],
+        "platform": null,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "quote": {
+          "USD": {
+            "price": 0.31333500784048285,
+            "volume_24h": 0.058052895050518805,
+            "volume_change_24h": 0.6883976379481869,
+            "percent_change_1h": 0.2659609294205616,
+            "percent_change_24h": 0.36472960256333997,
+            "percent_change_7d": 0.8666228971307788,
+            "percent_change_30d": 0.5494991597655505,
+            "market_cap": 0.7210448877436366,
+            "market_cap_dominance": 8029,
+            "fully_diluted_market_cap": 0.9564933188970712,
+            "last_updated": "2022-05-25T00:25:25.751Z"
+          }
+        }
+      },
+      {
+        "id": 8946,
+        "name": "qc1zxl1z0z",
+        "symbol": "ETH",
+        "slug": "qiskkfod37",
+        "is_active": 2942,
+        "is_fiat": null,
+        "circulating_supply": 5341,
+        "total_supply": 7158,
+        "max_supply": 7040,
+        "date_added": "2022-05-25T00:25:25.751Z",
+        "num_market_pairs": 5332,
+        "cmc_rank": 2490,
+        "last_updated": "2022-05-25T00:25:25.751Z",
+        "tags": [
+          "o563wu9o0g",
+          "ktxhleexjbj",
+          "b448r23gmju",
+          "y0zynddtilq",
+          "bsj54vgnetu",
+          "yagubjoez8",
+          "qdjkzw1brrs",
+          "ax1wqovkpt",
+          "ovwnttmfx3f",
+          "yq7l2slfc3e"
+        ],
+        "platform": null,
+        "self_reported_circulating_supply": null,
+        "self_reported_market_cap": null,
+        "quote": {
+          "USD": {
+            "price": 0.8911444703963332,
+            "volume_24h": 0.9575235731732177,
+            "volume_change_24h": 0.3472334490616804,
+            "percent_change_1h": 0.38795468890134677,
+            "percent_change_24h": 0.37671558361903457,
+            "percent_change_7d": 0.7531101423869808,
+            "percent_change_30d": 0.16415817045646208,
+            "market_cap": 0.1626395897171482,
+            "market_cap_dominance": 1894,
+            "fully_diluted_market_cap": 0.8483470384735234,
+            "last_updated": "2022-05-25T00:25:25.751Z"
+          }
+        }
+      }
+    ]
+  }
+}

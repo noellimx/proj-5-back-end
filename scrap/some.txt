@@ -1,0 +1,1027 @@
+  parent: error: invalid input value for enum enum_tracked_transactions_type: "asdfkusgadfasdf"
+      at Parser.parseErrorMessage (/Users/noellim/proj-5-back-end/node_modules/pg-protocol/dist/parser.js:287:98)
+      at Parser.handlePacket (/Users/noellim/proj-5-back-end/node_modules/pg-protocol/dist/parser.js:126:29)
+      at Parser.parse (/Users/noellim/proj-5-back-end/node_modules/pg-protocol/dist/parser.js:39:38)
+      at Socket.<anonymous> (/Users/noellim/proj-5-back-end/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      at readableAddChunk (node:internal/streams/readable:297:9)
+      at Readable.push (node:internal/streams/readable:234:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+    length: 165,
+    severity: 'ERROR',
+    code: '22P02',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: "unnamed portal parameter $8 = '...'",
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'enum.c',
+    line: '132',
+    routine: 'enum_in',
+    sql: 'INSERT INTO "tracked_transactions" ("id","created_at","updated_at","tracker","value","network","valueUSD","date","type","transaction_hash") VALUES (DEFAULT,$1,$2,$3,$4,$5,$6,$7,$8,$9) RETURNING "id","created_at","updated_at","tracker","value","network","valueUSD","date","type","transaction_hash";',
+    parameters: [
+      '2022-05-26 04:42:13.494 +00:00',
+      '2022-05-26 04:42:13.494 +00:00',
+      'user10397f7',
+      0.5,
+      'ETH',
+      1045.67834472656,
+      '2022-05-18 12:35:20.000 +00:00',
+      'asdfkusgadfasdf',
+      '0x53285927aeb2594eaa5af6d9bd8560b4abcf7e6795ae40450496770d47e075ac'
+    ]
+  },
+  original: error: invalid input value for enum enum_tracked_transactions_type: "asdfkusgadfasdf"
+      at Parser.parseErrorMessage (/Users/noellim/proj-5-back-end/node_modules/pg-protocol/dist/parser.js:287:98)
+      at Parser.handlePacket (/Users/noellim/proj-5-back-end/node_modules/pg-protocol/dist/parser.js:126:29)
+      at Parser.parse (/Users/noellim/proj-5-back-end/node_modules/pg-protocol/dist/parser.js:39:38)
+      at Socket.<anonymous> (/Users/noellim/proj-5-back-end/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:324:12)
+      at readableAddChunk (node:internal/streams/readable:297:9)
+      at Readable.push (node:internal/streams/readable:234:10)
+      at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+    length: 165,
+    severity: 'ERROR',
+    code: '22P02',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: "unnamed portal parameter $8 = '...'",
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'enum.c',
+    line: '132',
+    routine: 'enum_in',
+    sql: 'INSERT INTO "tracked_transactions" ("id","created_at","updated_at","tracker","value","network","valueUSD","date","type","transaction_hash") VALUES (DEFAULT,$1,$2,$3,$4,$5,$6,$7,$8,$9) RETURNING "id","created_at","updated_at","tracker","value","network","valueUSD","date","type","transaction_hash";',
+    parameters: [
+      '2022-05-26 04:42:13.494 +00:00',
+      '2022-05-26 04:42:13.494 +00:00',
+      'user10397f7',
+      0.5,
+      'ETH',
+      1045.67834472656,
+      '2022-05-18 12:35:20.000 +00:00',
+      'asdfkusgadfasdf',
+      '0x53285927aeb2594eaa5af6d9bd8560b4abcf7e6795ae40450496770d47e075ac'
+    ]
+  },
+  sql: 'INSERT INTO "tracked_transactions" ("id","created_at","updated_at","tracker","value","network","valueUSD","date","type","transaction_hash") VALUES (DEFAULT,$1,$2,$3,$4,$5,$6,$7,$8,$9) RETURNING "id","created_at","updated_at","tracker","value","network","valueUSD","date","type","transaction_hash";',
+  parameters: [
+    '2022-05-26 04:42:13.494 +00:00',
+    '2022-05-26 04:42:13.494 +00:00',
+    'user10397f7',
+    0.5,
+    'ETH',
+    1045.67834472656,
+    '2022-05-18 12:35:20.000 +00:00',
+    'asdfkusgadfasdf',
+    '0x53285927aeb2594eaa5af6d9bd8560b4abcf7e6795ae40450496770d47e075ac'
+  ]
+}
+[POST /track-transaction]
+Executing (default): SELECT "id", "created_at" AS "createdAt", "updated_at" AS "updatedAt", "username", "password" FROM "users" AS "user" WHERE "user"."id" = 113;
+[Transaction Add Record]
+Executing (default): INSERT INTO "tracked_transactions" ("id","created_at","updated_at","tracker","value","network","valueUSD","date","type","transaction_hash") VALUES (DEFAULT,$1,$2,$3,$4,$5,$6,$7,$8,$9) RETURNING "id","created_at","updated_at","tracker","value","network","valueUSD","date","type","transaction_hash";
+txdvfe
+{
+  id: 96,
+  tracker: 'user10397f7',
+  type: 'TRANSFER-IN',
+  transactionHash: '0x53285927aeb2594eaa5af6d9bd8560b4abcf7e6795ae40450496770d47e075ac',
+  value: 0.5,
+  valueUSD: 1045.67834472656,
+  date: 2022-05-18T12:35:20.000Z,
+  network: 'ETH',
+  updatedAt: 2022-05-26T04:42:14.552Z,
+  createdAt: 2022-05-26T04:42:14.552Z
+}
+---outlay
+[ [ 'ETH', { avgBuyPrice: 0, qtyLeft: 0, qtySold: 0 } ] ]
+---unrealrev
+---0
+{ ETH: { value: 0.930843152996341, date: '2022-05-26T04:42:15.431Z' } }
+[POST /track-transaction]
+Executing (default): SELECT "id", "created_at" AS "createdAt", "updated_at" AS "updatedAt", "username", "password" FROM "users" AS "user" WHERE "user"."id" = 113;
+[Transaction Add Record]
+Executing (default): INSERT INTO "tracked_transactions" ("id","created_at","updated_at","tracker","value","network","valueUSD","date","type","transaction_hash") VALUES (DEFAULT,$1,$2,$3,$4,$5,$6,$7,$8,$9) RETURNING "id","created_at","updated_at","tracker","value","network","valueUSD","date","type","transaction_hash";
+txdvfe
+{
+  id: 97,
+  tracker: 'user10397f7',
+  type: 'BUY',
+  transactionHash: '0x53285927aeb2594eaa5af6d9bd8560b4abcf7e6795ae40450496770d47e075ac',
+  value: 0.5,
+  valueUSD: 1045.67834472656,
+  date: 2022-05-18T12:35:20.000Z,
+  network: 'ETH',
+  updatedAt: 2022-05-26T04:42:16.704Z,
+  createdAt: 2022-05-26T04:42:16.704Z
+}
+---outlay
+[
+  [
+    'ETH',
+    { avgBuyPrice: 2091.35668945312, qtyLeft: 0.5, qtySold: 0 }
+  ]
+]
+---unrealrev
+---0.4654215764981705
+{ ETH: { value: 0.930843152996341, date: '2022-05-26T04:42:15.431Z' } }
+ -----[001] checkpoint 1 
+Server [GET /get-transaction]
+Executing (default): SELECT "id", "created_at" AS "createdAt", "updated_at" AS "updatedAt", "username", "password" FROM "users" AS "user" WHERE "user"."id" = 113;
+Executing (default): SELECT "id", "created_at" AS "createdAt", "updated_at" AS "updatedAt", "tracker", "value", "network", "valueUSD", "date", "type", "transaction_hash" AS "transactionHash" FROM "tracked_transactions" AS "trackedTransaction" WHERE "trackedTransaction"."id" = 97;
+txdvfe
+{
+  id: 97,
+  createdAt: 2022-05-26T04:42:16.704Z,
+  updatedAt: 2022-05-26T04:42:16.704Z,
+  tracker: 'user10397f7',
+  value: 0.5,
+  network: 'ETH',
+  valueUSD: 1045.67834472656,
+  date: 2022-05-18T12:35:20.000Z,
+  type: 'BUY',
+  transactionHash: '0x53285927aeb2594eaa5af6d9bd8560b4abcf7e6795ae40450496770d47e075ac'
+}
+---outlay
+[
+  [
+    'ETH',
+    { avgBuyPrice: 2091.35668945312, qtyLeft: 0.5, qtySold: 0 }
+  ]
+]
+---unrealrev
+---0.4654215764981705
+{ ETH: { value: 0.930843152996341, date: '2022-05-26T04:42:15.431Z' } }
+ -----[001] checkpoint 2 
+{ date: '2022-05-18T12:35:20.000Z', value: 1045.67834472656 }
+{ value: 0.930843152996341, date: '2022-05-26T04:42:15.431Z' }
+    ✔ [001]Should be able to record a transaction  (5850ms)
+
+
+  4 passing (6s)
+
+^C
+➜  proj-5-back-end git:(user-story-1) npm start
+
+> proj-5-back-end@1.0.0 start
+> npm run start-dev
+
+
+> proj-5-back-end@1.0.0 start-dev
+> node index.js
+
+ENVIRONMENT is development
+[connectSequelize] development
+Connected. Database Name: p5
+Executing (default): DELETE FROM "tracked_transactions"
+Executing (default): DELETE FROM "users"
+Executing (default): SELECT "id", "created_at" AS "createdAt", "updated_at" AS "updatedAt", "username", "password" FROM "users" AS "user" WHERE "user"."username" = 't' LIMIT 1;
+username taken
+Executing (default): INSERT INTO "users" ("id","created_at","updated_at","username","password") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING "id","created_at","updated_at","username","password";
+[registerUser] user created { id : 114 , username: t }
+Server listening 3002
+^C
+➜  proj-5-back-end git:(user-story-1) ✗ npm start
+
+> proj-5-back-end@1.0.0 start
+> npm run start-dev
+
+
+> proj-5-back-end@1.0.0 start-dev
+> node index.js
+
+ENVIRONMENT is development
+[connectSequelize] development
+Connected. Database Name: p5
+Executing (default): DELETE FROM "tracked_transactions"
+Executing (default): DELETE FROM "users"
+Executing (default): SELECT "id", "created_at" AS "createdAt", "updated_at" AS "updatedAt", "username", "password" FROM "users" AS "user" WHERE "user"."username" = 't' LIMIT 1;
+username taken
+Executing (default): INSERT INTO "users" ("id","created_at","updated_at","username","password") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING "id","created_at","updated_at","username","password";
+[registerUser] user created { id : 115 , username: t }
+Server listening 3002
+^C
+➜  proj-5-back-end git:(user-story-1) ✗ npm start
+
+> proj-5-back-end@1.0.0 start
+> npm run start-dev
+
+
+> proj-5-back-end@1.0.0 start-dev
+> node index.js
+
+ENVIRONMENT is development
+[connectSequelize] development
+Connected. Database Name: p5
+Executing (default): DELETE FROM "tracked_transactions"
+Executing (default): DELETE FROM "users"
+Executing (default): SELECT "id", "created_at" AS "createdAt", "updated_at" AS "updatedAt", "username", "password" FROM "users" AS "user" WHERE "user"."username" = 't' LIMIT 1;
+username taken
+Executing (default): INSERT INTO "users" ("id","created_at","updated_at","username","password") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING "id","created_at","updated_at","username","password";
+[registerUser] user created { id : 116 , username: t }
+Server listening 3002
+[POST /track-transaction]
+Executing (default): SELECT "id", "created_at" AS "createdAt", "updated_at" AS "updatedAt", "username", "password" FROM "users" AS "user" WHERE "user"."id" IS NULL LIMIT 1;
+TypeError: Cannot read properties of null (reading 'getDataValue')
+    at Object.getUsernameOfUserId (file:///Users/noellim/proj-5-back-end/database/index.js:69:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///Users/noellim/proj-5-back-end/express/index.js:206:22
+^C
+➜  proj-5-back-end git:(user-story-1) ✗ npm start
+
+> proj-5-back-end@1.0.0 start
+> npm run start-dev
+
+
+> proj-5-back-end@1.0.0 start-dev
+> node index.js
+
+ENVIRONMENT is development
+[connectSequelize] development
+Connected. Database Name: p5
+Executing (default): DELETE FROM "tracked_transactions"
+Executing (default): DELETE FROM "users"
+Executing (default): SELECT "id", "created_at" AS "createdAt", "updated_at" AS "updatedAt", "username", "password" FROM "users" AS "user" WHERE "user"."username" = 't' LIMIT 1;
+username taken
+Executing (default): INSERT INTO "users" ("id","created_at","updated_at","username","password") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING "id","created_at","updated_at","username","password";
+[registerUser] user created { id : 117 , username: t }
+Server listening 3002
+[POST /track-transaction]
+[getUsernameOfUserId] id null
+Executing (default): SELECT "id", "created_at" AS "createdAt", "updated_at" AS "updatedAt", "username", "password" FROM "users" AS "user" WHERE "user"."id" IS NULL LIMIT 1;
+TypeError: Cannot read properties of null (reading 'getDataValue')
+    at Object.getUsernameOfUserId (file:///Users/noellim/proj-5-back-end/database/index.js:70:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///Users/noellim/proj-5-back-end/express/index.js:206:22
+[GET /login]
+{ authToken: null, msg: 'User field should not be empty :(' }
+^C
+➜  proj-5-back-end git:(user-story-1) ✗ npm start
+
+> proj-5-back-end@1.0.0 start
+> npm run start-dev
+
+
+> proj-5-back-end@1.0.0 start-dev
+> node index.js
+
+ENVIRONMENT is development
+[connectSequelize] development
+Connected. Database Name: p5
+Executing (default): DELETE FROM "tracked_transactions"
+Executing (default): DELETE FROM "users"
+Executing (default): SELECT "id", "created_at" AS "createdAt", "updated_at" AS "updatedAt", "username", "password" FROM "users" AS "user" WHERE "user"."username" = 't' LIMIT 1;
+username taken
+Executing (default): INSERT INTO "users" ("id","created_at","updated_at","username","password") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING "id","created_at","updated_at","username","password";
+[registerUser] user created { id : 118 , username: t }
+Server listening 3002
+[GET /login]
+{ email: undefined, password: undefined }
+{ authToken: null, msg: 'User field should not be empty :(' }
+^C
+➜  proj-5-back-end git:(user-story-1) ✗ npm start
+
+> proj-5-back-end@1.0.0 start
+> npm run start-dev
+
+
+> proj-5-back-end@1.0.0 start-dev
+> node index.js
+
+ENVIRONMENT is development
+[connectSequelize] development
+Connected. Database Name: p5
+Executing (default): DELETE FROM "tracked_transactions"
+Executing (default): DELETE FROM "users"
+Executing (default): SELECT "id", "created_at" AS "createdAt", "updated_at" AS "updatedAt", "username", "password" FROM "users" AS "user" WHERE "user"."username" = 't' LIMIT 1;
+username taken
+Executing (default): INSERT INTO "users" ("id","created_at","updated_at","username","password") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING "id","created_at","updated_at","username","password";
+[registerUser] user created { id : 119 , username: t }
+Server listening 3002
+[GET /login]
+{ email: undefined, password: undefined }
+<ref *2> IncomingMessage {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 16384,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: [],
+    flowing: null,
+    ended: false,
+    endEmitted: false,
+    reading: false,
+    constructed: true,
+    sync: true,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    errorEmitted: false,
+    emitClose: true,
+    autoDestroy: true,
+    destroyed: false,
+    errored: null,
+    closed: false,
+    closeEmitted: false,
+    defaultEncoding: 'utf8',
+    awaitDrainWriters: null,
+    multiAwaitDrain: false,
+    readingMore: true,
+    dataEmitted: false,
+    decoder: null,
+    encoding: null,
+    [Symbol(kPaused)]: null
+  },
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  socket: <ref *1> Socket {
+    connecting: false,
+    _hadError: false,
+    _parent: null,
+    _host: null,
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: false,
+      endEmitted: false,
+      reading: true,
+      constructed: true,
+      sync: false,
+      needReadable: true,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      destroyed: false,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: false,
+      dataEmitted: false,
+      decoder: null,
+      encoding: null,
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      timeout: [Function: socketOnTimeout],
+      data: [Function: bound socketOnData],
+      error: [Function: socketOnError],
+      close: [Array],
+      drain: [Function: bound socketOnDrain],
+      resume: [Function: onSocketResume],
+      pause: [Function: onSocketPause]
+    },
+    _eventsCount: 8,
+    _maxListeners: undefined,
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: false,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    allowHalfOpen: true,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '6::::3002',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 101,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 1481,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 100,
+        [Symbol(triggerId)]: 0
+      }
+    },
+    _server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '6::::3002',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 101,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 1481,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 100,
+        [Symbol(triggerId)]: 0
+      }
+    },
+    parser: HTTPParser {
+      '0': null,
+      '1': [Function: parserOnHeaders],
+      '2': [Function: parserOnHeadersComplete],
+      '3': [Function: parserOnBody],
+      '4': [Function: parserOnMessageComplete],
+      '5': [Function: bound onParserExecute],
+      '6': [Function: bound onParserTimeout],
+      _headers: [],
+      _url: '',
+      socket: [Circular *1],
+      incoming: [Circular *2],
+      outgoing: null,
+      maxHeaderPairs: 2000,
+      _consumed: true,
+      onIncoming: [Function: bound parserOnIncoming],
+      [Symbol(resource_symbol)]: [HTTPServerAsyncResource]
+    },
+    on: [Function: socketListenerWrap],
+    addListener: [Function: socketListenerWrap],
+    prependListener: [Function: socketListenerWrap],
+    setEncoding: [Function: socketSetEncoding],
+    _paused: false,
+    _httpMessage: ServerResponse {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: true,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: false,
+      _closed: false,
+      socket: [Circular *1],
+      _header: null,
+      _keepAliveTimeout: 5000,
+      _onPendingData: [Function: bound updateOutgoingData],
+      req: [Circular *2],
+      _sent100: false,
+      _expect_continue: false,
+      locals: [Object: null prototype] {},
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    [Symbol(async_id_symbol)]: 110,
+    [Symbol(kHandle)]: TCP {
+      reading: true,
+      onconnection: null,
+      _consumed: true,
+      [Symbol(owner_symbol)]: [Circular *1]
+    },
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: null,
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(kCapture)]: false,
+    [Symbol(kSetNoDelay)]: false,
+    [Symbol(kSetKeepAlive)]: false,
+    [Symbol(kSetKeepAliveInitialDelay)]: 0,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0
+  },
+  httpVersionMajor: 1,
+  httpVersionMinor: 1,
+  httpVersion: '1.1',
+  complete: false,
+  rawHeaders: [
+    'Host',
+    'localhost:3002',
+    'User-Agent',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0',
+    'Accept',
+    'application/json, text/plain, */*',
+    'Accept-Language',
+    'zh-HK,zh-SG;q=0.8,en-US;q=0.5,en;q=0.3',
+    'Accept-Encoding',
+    'gzip, deflate, br',
+    'Origin',
+    'http://localhost:3001',
+    'Connection',
+    'keep-alive',
+    'Referer',
+    'http://localhost:3001/',
+    'Sec-Fetch-Dest',
+    'empty',
+    'Sec-Fetch-Mode',
+    'cors',
+    'Sec-Fetch-Site',
+    'same-site',
+    'Pragma',
+    'no-cache',
+    'Cache-Control',
+    'no-cache'
+  ],
+  rawTrailers: [],
+  aborted: false,
+  upgrade: false,
+  url: '/login',
+  method: 'GET',
+  statusCode: null,
+  statusMessage: null,
+  client: <ref *1> Socket {
+    connecting: false,
+    _hadError: false,
+    _parent: null,
+    _host: null,
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: false,
+      endEmitted: false,
+      reading: true,
+      constructed: true,
+      sync: false,
+      needReadable: true,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      destroyed: false,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: false,
+      dataEmitted: false,
+      decoder: null,
+      encoding: null,
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      timeout: [Function: socketOnTimeout],
+      data: [Function: bound socketOnData],
+      error: [Function: socketOnError],
+      close: [Array],
+      drain: [Function: bound socketOnDrain],
+      resume: [Function: onSocketResume],
+      pause: [Function: onSocketPause]
+    },
+    _eventsCount: 8,
+    _maxListeners: undefined,
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: false,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    allowHalfOpen: true,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '6::::3002',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 101,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 1481,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 100,
+        [Symbol(triggerId)]: 0
+      }
+    },
+    _server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '6::::3002',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 101,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 1481,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 100,
+        [Symbol(triggerId)]: 0
+      }
+    },
+    parser: HTTPParser {
+      '0': null,
+      '1': [Function: parserOnHeaders],
+      '2': [Function: parserOnHeadersComplete],
+      '3': [Function: parserOnBody],
+      '4': [Function: parserOnMessageComplete],
+      '5': [Function: bound onParserExecute],
+      '6': [Function: bound onParserTimeout],
+      _headers: [],
+      _url: '',
+      socket: [Circular *1],
+      incoming: [Circular *2],
+      outgoing: null,
+      maxHeaderPairs: 2000,
+      _consumed: true,
+      onIncoming: [Function: bound parserOnIncoming],
+      [Symbol(resource_symbol)]: [HTTPServerAsyncResource]
+    },
+    on: [Function: socketListenerWrap],
+    addListener: [Function: socketListenerWrap],
+    prependListener: [Function: socketListenerWrap],
+    setEncoding: [Function: socketSetEncoding],
+    _paused: false,
+    _httpMessage: ServerResponse {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: true,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: false,
+      _closed: false,
+      socket: [Circular *1],
+      _header: null,
+      _keepAliveTimeout: 5000,
+      _onPendingData: [Function: bound updateOutgoingData],
+      req: [Circular *2],
+      _sent100: false,
+      _expect_continue: false,
+      locals: [Object: null prototype] {},
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    [Symbol(async_id_symbol)]: 110,
+    [Symbol(kHandle)]: TCP {
+      reading: true,
+      onconnection: null,
+      _consumed: true,
+      [Symbol(owner_symbol)]: [Circular *1]
+    },
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: null,
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(kCapture)]: false,
+    [Symbol(kSetNoDelay)]: false,
+    [Symbol(kSetKeepAlive)]: false,
+    [Symbol(kSetKeepAliveInitialDelay)]: 0,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0
+  },
+  _consuming: false,
+  _dumped: false,
+  next: [Function: next],
+  baseUrl: '',
+  originalUrl: '/login',
+  _parsedUrl: Url {
+    protocol: null,
+    slashes: null,
+    auth: null,
+    host: null,
+    port: null,
+    hostname: null,
+    hash: null,
+    search: null,
+    query: null,
+    pathname: '/login',
+    path: '/login',
+    href: '/login',
+    _raw: '/login'
+  },
+  params: {},
+  query: {},
+  res: <ref *3> ServerResponse {
+    _events: [Object: null prototype] { finish: [Function: bound resOnFinish] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: true,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: null,
+    _hasBody: true,
+    _trailer: '',
+    finished: false,
+    _headerSent: false,
+    _closed: false,
+    socket: <ref *1> Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 8,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: true,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: [Server],
+      _server: [Server],
+      parser: [HTTPParser],
+      on: [Function: socketListenerWrap],
+      addListener: [Function: socketListenerWrap],
+      prependListener: [Function: socketListenerWrap],
+      setEncoding: [Function: socketSetEncoding],
+      _paused: false,
+      _httpMessage: [Circular *3],
+      [Symbol(async_id_symbol)]: 110,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: false,
+      [Symbol(kSetKeepAliveInitialDelay)]: 0,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0
+    },
+    _header: null,
+    _keepAliveTimeout: 5000,
+    _onPendingData: [Function: bound updateOutgoingData],
+    req: [Circular *2],
+    _sent100: false,
+    _expect_continue: false,
+    locals: [Object: null prototype] {},
+    [Symbol(kCapture)]: false,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      'x-powered-by': [Array],
+      'access-control-allow-origin': [Array]
+    }
+  },
+  body: {},
+  route: Route { path: '/login', stack: [ [Layer] ], methods: { get: true } },
+  [Symbol(kCapture)]: false,
+  [Symbol(kHeaders)]: {
+    host: 'localhost:3002',
+    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0',
+    accept: 'application/json, text/plain, */*',
+    'accept-language': 'zh-HK,zh-SG;q=0.8,en-US;q=0.5,en;q=0.3',
+    'accept-encoding': 'gzip, deflate, br',
+    origin: 'http://localhost:3001',
+    connection: 'keep-alive',
+    referer: 'http://localhost:3001/',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-site',
+    pragma: 'no-cache',
+    'cache-control': 'no-cache'
+  },
+  [Symbol(kHeadersCount)]: 26,
+  [Symbol(kTrailers)]: null,
+  [Symbol(kTrailersCount)]: 0
+}
+{ authToken: null, msg: 'User field should not be empty :(' }
