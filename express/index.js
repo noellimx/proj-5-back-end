@@ -149,7 +149,8 @@ const mw = ((db) => {
           token,
           transactionType: type,
           transactionHash,
-          boughtDate,
+          unitCostDate
+          //unitCostPrice,
         } = req.body;
 
         console.log(`req.body`);
@@ -431,6 +432,11 @@ app.get("/all-views", mw.view.getAll);
 app.get("/get-view", mw.view.get_);
 
 app.get("/get-views-of-transaction", mw.view.getOfTransactions);
+// TO DO
+app.post("/edit-viewname", (req,res)=>{
+  const { token, viewId, viewname: name } = req.body;
+  return res.status(400)
+})
 
 // TODO
 app.post("/rename-view", mw.view.rename);
